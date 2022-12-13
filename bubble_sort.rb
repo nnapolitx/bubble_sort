@@ -2,17 +2,22 @@ arr = [4,3,78,2,0,2]
 
 def bubble_sort(arr)
     n = arr.length - 1
-    k = arr.length
     for i in 0..n do
+        count = 0
         for j in 0..(n-1) do
             e1 = arr[j]
             e2 = arr[j+1]
             if e1>e2
                 arr[j]=e2
                 arr[j+1]=e1
+                count +=1
             end
         end
         print "#{arr}\n"
+        if count == 0
+            p 'true boo\n'
+            break
+        end
     end
     arr
 end
