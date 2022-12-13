@@ -1,7 +1,8 @@
-arr = [4,3,78,2,0,2]
+arr = [4,3,78,2,0,2, 3, 1]
 
 def bubble_sort(arr)
     n = arr.length - 1
+    k = 0
     for i in 0..n do
         count = 0
         for j in 0..(n-1) do
@@ -15,10 +16,10 @@ def bubble_sort(arr)
         end
         print "#{arr}\n"
         if count == 0
-            p 'true boo\n'
             break
         end
     end
+    print "\n"
     arr
 end
 
