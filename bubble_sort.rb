@@ -1,12 +1,20 @@
 arr = [4,3,78,2,0,2]
 
 def bubble_sort(arr)
-    p arr
     n = arr.length - 1
-    p n
+    for i in 0..n do
+        for j in 0..(n-1) do
+            e1 = arr[j]
+            e2 = arr[j+1]
+            if e1>e2
+                e1=e2
+                e2=e1
+            end
+        end
+    end
 end
 
-bubble_sort(arr)
+p bubble_sort(arr)
 
 #pseudocode outline (may have errors)
 =begin
