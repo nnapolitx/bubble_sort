@@ -7,11 +7,12 @@ def bubble_sort(arr)
             e1 = arr[j]
             e2 = arr[j+1]
             if e1>e2
-                e1=e2
-                e2=e1
+                arr[j]=e2
+                arr[j+1]=e1
             end
         end
     end
+    arr
 end
 
 p bubble_sort(arr)
